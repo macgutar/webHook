@@ -8,6 +8,7 @@
 @restResource(urlMapping='/api/webhooks/incoming/pushDetails/*')//with this
 global class WebhookSubscription {
 	@HttpPost
+    
     global static void handleNotification(){
         try{
             RestRequest request = RestContext.request;

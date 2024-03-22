@@ -2,13 +2,12 @@
  * @description       : 
  * @author            : marco.casanova@vurpix.com
  * @group             : 
- * @last modified on  : 03-21-2024
+ * @last modified on  : 03-22-2024
  * @last modified by  : marco.casanova@vurpix.com
 **/
-@restResource(urlMapping='/api/webhooks/incoming/pushDetails/*')//with this
+@restResource(urlMapping='/pushDetails')//with this
 global class WebhookSubscription {
 	@HttpPost
-    
     global static void handleNotification(){
         try{
             RestRequest request = RestContext.request;
@@ -21,6 +20,8 @@ global class WebhookSubscription {
             
             String repo;
 
+        
+            
             while(parser.nextToken() != null){
                 if(parser.getText() == 'pusher'){
                     system.debug('inside pusher');
@@ -105,4 +106,3 @@ global class WebhookSubscription {
     */
     
 }
-

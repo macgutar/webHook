@@ -20,8 +20,6 @@ global class WebhookSubscription {
             //head_commit hc;
             
             String repo;
-
-        
             
             while(parser.nextToken() != null){
                 if(parser.getText() == 'pusher'){

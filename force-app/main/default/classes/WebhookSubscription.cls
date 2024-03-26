@@ -5,7 +5,7 @@
  * @last modified on  : 03-26-2024
  * @last modified by  : marco.casanova@vurpix.com
 **/
-@restResource(urlMapping='/pushDetail')//with this
+@restResource(urlMapping='/pushDetails')//with this
 global class WebhookSubscription {
 	@HttpPost
     global static void handleNotification(){

@@ -2,10 +2,10 @@
  * @description       : 
  * @author            : marco.casanova@vurpix.com
  * @group             : 
- * @last modified on  : 03-22-2024
+ * @last modified on  : 03-26-2024
  * @last modified by  : marco.casanova@vurpix.com
 **/
-@restResource(urlMapping='/pushDetails')//with this
+@restResource(urlMapping='/pushDetail')//with this
 global class WebhookSubscription {
 	@HttpPost
     global static void handleNotification(){
